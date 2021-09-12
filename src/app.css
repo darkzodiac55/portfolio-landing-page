@@ -1,5 +1,6 @@
 :root {
     --background: 0;
+    --backgroundA: blue;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -60,14 +61,14 @@ body:before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #e1eec3;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #f05053, #e1eec3);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #f05053, #e1eec3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--backgroundA);
+
+/*     background: -webkit-linear-gradient(to top, #f05053, #e1eec3);
+
+    background: linear-gradient(to top, #f05053, #e1eec3); */
+
     z-index: -1;
-    transition: opacity 0.5s linear;
+    transition: opacity 0.8s linear;
     opacity: var(--background)
 }
 

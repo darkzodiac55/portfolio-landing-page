@@ -9,4 +9,5 @@ module.exports = merge(common, {
     filename: 'main.[contenthash].js',
     path: path.resolve(__dirname, "dist"),
   },
+  
 });
