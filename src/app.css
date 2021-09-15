@@ -62,13 +62,11 @@ body:before {
     bottom: 0;
     left: 0;
     background: var(--backgroundA);
-
-/*     background: -webkit-linear-gradient(to top, #f05053, #e1eec3);
+    /*     background: -webkit-linear-gradient(to top, #f05053, #e1eec3);
 
     background: linear-gradient(to top, #f05053, #e1eec3); */
-
     z-index: -1;
-    transition: opacity 0.8s linear;
+    transition: opacity 0.5s ease;
     opacity: var(--background)
 }
 
@@ -88,12 +86,16 @@ body:before {
     -webkit-transform-origin: 0 0;
     width: fit-content;
     height: fit-content;
+    
 }
 
 .thumbnail iframe {
     width: 1440px;
     height: 900px;
+    border-radius: 3.2%;
+    
 }
+
 
 .thumbnail:after {
     content: "";
@@ -115,6 +117,8 @@ body:before {
     padding-left: 0;
     margin-right: 60px;
     margin-left: 60px;
+    /* border-radius: 20px; */
+    
 }
 
 .main {
@@ -122,8 +126,24 @@ body:before {
     height: 80vh;
 }
 
-.cont:hover {
-    transform: scale(1.26);
+/* .cont:hover {
+    transform: rotate(2deg) scale(1.26);
+} */
+
+.cont:nth-of-type(2):hover {
+    transform: rotate(-3deg) scale(1.26);
+}
+
+.cont:nth-of-type(1):hover {
+    transform: rotate(3deg) scale(1.26);
+}
+
+#cont3:hover {
+    transform: rotate(-3deg) scale(1.26);
+}
+
+#cont4:hover {
+    transform: rotate(3deg) scale(1.26);
 }
 
 .row {
@@ -171,13 +191,18 @@ img:hover {
     border-right: 2px solid purple; */
     border-bottom-right-radius: 20px;
     /* background: #a300a3; */
-    box-shadow: -9px -7px 10px 18px #ade8f4;
+    box-shadow: 0px 0px 15px -3px #ebebeb;
     color: black;
-    background: #ade8f4;
+    background: #0203031a;
+    text-decoration: underline rgba(255, 255, 0, 0.377);
 }
 
 .links p {
     margin-left: 5rem;
+}
+
+.links:hover {
+    box-shadow: 0px 0px 17px 1px #ebebeb;
 }
 
 .list {
@@ -194,8 +219,12 @@ img:hover {
     top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: rgba(6, 1, 7, 0.479);
 }
 
 .container-fluid {
@@ -219,7 +248,7 @@ img:hover {
     padding: 0.5rem;
     position: absolute;
     bottom: 0px;
-/*     left: 48vw; */
+    /*     left: 48vw; */
     height: 4.3rem;
     width: 5.3rem;
     padding-bottom: 0;
@@ -235,4 +264,4 @@ img:hover {
 .fcont:hover {
     text-shadow: 5px -1px 2px white;
     box-shadow: 0 -2px 11px 1px white;
-  }
+}

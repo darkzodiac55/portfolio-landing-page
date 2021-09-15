@@ -39,16 +39,20 @@ function changeClr(clr) {
         setTimeout(() => {   /////fix for quick mouse movement
 
             wait = 0
-        }, 700);
+        }, 500);
 
 
     }
 }
 
-const red = changeClr('linear-gradient(to left, #f05053, #e1eec3)')
-const green = changeClr('linear-gradient(to left, #240b36, #c31432)')
-const proj3bg = changeClr('linear-gradient(to right, #f7797d, #FBD786, #C6FFDD)')
-const proj4bg = changeClr('linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)')
+
+
+//linear-gradient(to left, #f05053, #e1eec3)
+
+const red = changeClr('linear-gradient(90deg, rgba(250,231,208,1) 3%, rgba(255,228,196,1) 44%, rgba(208,154,89,1) 85%)')
+const green = changeClr('linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9)')
+const proj3bg = changeClr('linear-gradient(to left, #dc2430, #7b4397)')
+const proj4bg = changeClr('linear-gradient(to left, #19547b, #ffd89b)')
 
 proj1.addEventListener('mouseenter', green)
 proj2.addEventListener('mouseenter', red)
