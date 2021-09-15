@@ -59,20 +59,7 @@ proj2.addEventListener('mouseenter', red)
 proj3.addEventListener('mouseenter', proj3bg)
 proj4.addEventListener('mouseenter', proj4bg)
 
-btn.addEventListener('click', () => {
 
-    let opa = window.getComputedStyle(
-        document.querySelector('body'), ':before'
-    ).getPropertyValue('opacity')
-
-    if (opa == 0) {
-        main.setProperty('--background', '1')
-    } else {
-        main.setProperty('--background', '0')
-        document.body.style.setProperty('background', 'linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)')
-    }
-
-})
 
 
 
