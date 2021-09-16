@@ -227,6 +227,8 @@ a {
     justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
     color: black !important;
+    font-weight: 200;
+    font-size: 1.2rem;
 }
 
 #port {
@@ -239,7 +241,7 @@ a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
-    color: rgba(6, 1, 7, 0.479);
+    color: rgb(6, 1, 7);
 }
 
 .container-fluid {
