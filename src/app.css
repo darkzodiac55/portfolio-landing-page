@@ -126,19 +126,19 @@ body:before {
 
 .main {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
 }
 
 /* .cont:hover {
     transform: rotate(2deg) scale(1.26);
 } */
 
-.cont:nth-of-type(2):hover {
-    transform: rotate(-3deg) scale(1.26);
+#cont1:hover {
+    transform: rotate(-3deg) scale(1.3);
 }
 
-.cont:nth-of-type(1):hover {
-    transform: rotate(3deg) scale(1.26);
+#cont2:hover {
+    transform: rotate(3deg) scale(1.3);
 }
 
 #cont3:hover {
@@ -149,9 +149,29 @@ body:before {
     transform: rotate(3deg) scale(1.26);
 }
 
+#cont5:hover {
+    transform: rotate(3deg) scale(1.3);
+}
+
 .row {
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 0;
+}
+
+.col-3.cont {
+    transition: all 0.5s ease;
+    overflow: hidden;
+    width: calc(1152px * 0.37);
+    height: calc(648px * 0.37);
+    padding-left: 0;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.col-3.cont .thumbnail iframe {
+    width: 1152px;
+    height: 648px;
+    border-radius: 3.2%;
 }
 
 .header {
@@ -180,7 +200,7 @@ img {
     width: 5%;
 }
 
-img:hover {
+#mylogo:hover {
     box-shadow: 0 -2px 30px 4px rgb(245, 230, 18);
 }
 
@@ -252,7 +272,17 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+#reactLogo {
+    position: absolute;
+    z-index: 10000;
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 210px;
+    height: 210px;
+    opacity: 0.5;
 }
 
 .fcont {
